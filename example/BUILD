@@ -1,4 +1,4 @@
-load("//:aar_with_jni.bzl", "aar_with_jni")
+load("@aar_with_jni//:aar_with_jni.bzl", "aar_with_jni")
 
 aar_with_jni(
     name = "my_aar",
