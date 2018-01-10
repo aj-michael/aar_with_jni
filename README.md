@@ -9,9 +9,9 @@ Usage:
 # WORKSPACE
 http_archive(
     name = "aar_with_jni",
-    url = "https://api.github.com/repos/aj-michael/aar_with_jni/tarball/8a9a1d19bbbc8fddaaf15e7a9c7fd395d9a9db83",
-    sha256 = "08b18b4555c9ad51deaee8636e5e525721a9cd66814fa10434d125284aedfa4f",
-    strip_prefix = "aj-michael-aar_with_jni-8a9a1d1",
+    url = "https://api.github.com/repos/aj-michael/aar_with_jni/tarball/1f36219a9afc099e910f1cbbf95fd5e85b53fd55",
+    sha256 = "5c799a29f36483c2f609b9b410b874ac355210b923e01fc0a620f5cb449ffcb2",
+    strip_prefix = "aj-michael-aar_with_jni-1f36219",
     type = "tgz",
 )
 ```
