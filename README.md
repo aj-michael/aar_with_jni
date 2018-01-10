@@ -59,3 +59,9 @@ jni/armeabi-v7a/libmy_aar_binary.so
 -rw-r--r--  3.0 unx   219436 bx defN 18-Jan-10 14:12 jni/x86/libmy_aar_binary.so
 6 files, 388169 bytes uncompressed, 155587 bytes compressed:  59.9%
 ```
+
+To load, use the name of the `aar_with_jni` rule plus "_jni":
+
+```
+System.loadLibrary("my_aar_jni");
+```
