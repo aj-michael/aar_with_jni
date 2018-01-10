@@ -55,8 +55,8 @@ Zip file size: 156371 bytes, number of entries: 6
 -rw----     2.0 fat        0 b- defN 80-Jan-01 00:00 res/
 -rw----     2.0 fat        0 b- defN 80-Jan-01 00:00 R.txt
 -rw-r--r--  3.0 unx   167616 bx defN 18-Jan-10 14:12
-jni/armeabi-v7a/libmy_aar_binary.so
--rw-r--r--  3.0 unx   219436 bx defN 18-Jan-10 14:12 jni/x86/libmy_aar_binary.so
+jni/armeabi-v7a/libmy_aar_jni.so
+-rw-r--r--  3.0 unx   219436 bx defN 18-Jan-10 14:12 jni/x86/libmy_aar_jni.so
 6 files, 388169 bytes uncompressed, 155587 bytes compressed:  59.9%
 ```
 
