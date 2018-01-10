@@ -17,7 +17,7 @@ http_archive(
 ```
 
 ```
-# BUILD
+# example/BUILD
 load("@aar_with_jni//:aar_with_jni.bzl", "aar_with_jni")
 
 aar_with_jni(
@@ -37,4 +37,13 @@ cc_library(
     name = "my_cc_library",
     srcs = ["foo.cc"],
 )
+```
+
+To build:
+
+```
+$ bazel build --fat_apk_cpu=armeabi-v7a,x86 //example:my_aar
+...
+Target //example:my_aar up-to-date:
+  bazel-genfiles/example/my_aar.aar
 ```
