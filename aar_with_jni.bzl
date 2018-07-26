@@ -22,7 +22,7 @@ EOF
 
   native.genrule(
       name = name,
-      srcs = [android_library + ".aar", name + "_jni_unsigned.apk"],
+      srcs = [android_library + ".aar", name + "_jni_unsigned.apk", name + "_jni_deploy.jar"],
       outs = [name + ".aar"],
       cmd = """
 cp $(location {}.aar) $(location :{}.aar)
@@ -30,7 +30,8 @@ chmod +w $(location :{}.aar)
 origdir=$$PWD
 cd $$(mktemp -d)
 unzip $$origdir/$(location :{}_jni_unsigned.apk) "lib/*"
+cp $$origdir/$(location :{}_jni_deploy.jar) classes.jar
 cp -r lib jni
-zip -r $$origdir/$(location :{}.aar) jni/*/*.so
-""".format(android_library, name, name, name, name),
+zip -r $$origdir/$(location :{}.aar) jni/*/*.so classes.jar
+""".format(android_library, name, name, name, name, name),
   )
